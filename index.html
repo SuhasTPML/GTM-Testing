@@ -1,0 +1,3219 @@
+<!DOCTYPE html>
+<!-- saved from url=(0084)file:///C:/Users/suhas.bhandari/Documents/GitHub/DH-Login-wall/index%20-%20Copy.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>India's 'Akashteer' system shines in Ops Sindoor, DRDO chief foresees international demand - Deccan Herald</title>
+    <style>
+        /* Tab Styles */
+        .news-tabs-container {
+            position: relative;
+        }
+        
+        .tabs-header {
+            display: flex;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .tab-button {
+            padding: 0.8rem 1rem;
+            font-size: 1rem;
+            font-weight: 500;
+            color: #666;
+            cursor: pointer;
+            position: relative;
+            text-align: center;
+            flex: 1;
+            transition: all 0.2s ease;
+        }
+        
+        .tab-button.active {
+            color: #2ba3c7;
+            font-weight: 600;
+        }
+        
+        .tab-button.active:after {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: #2ba3c7;
+        }
+        
+        .tab-content {
+            display: none;
+            padding: 1rem;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+
+        /* Header Styles */
+        .top-header {
+            background: linear-gradient(135deg, #2ba3c7, #1e8aa8);
+            color: white;
+            padding: 0.4rem 0;
+            position: relative;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 1rem;
+        }
+
+        .main-nav {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            flex: 1;
+            margin-left: 2rem;
+            overflow-x: auto;
+        }
+
+        .main-nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 0.8rem;
+            font-weight: 500;
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            transition: background 0.3s;
+            white-space: nowrap;
+        }
+
+        .main-nav a:hover {
+            background: rgba(255,255,255,0.1);
+        }
+
+        .nav-separator {
+            color: rgba(255,255,255,0.6);
+            font-size: 0.7rem;
+            margin: 0 0.1rem;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-size: 0.8rem;
+        }
+
+        /* Dev Mode Styles */
+        .dev-mode-toggle {
+            background: rgba(255,255,255,0.2);
+            border: 1px solid rgba(255,255,255,0.3);
+            color: white;
+            padding: 0.3rem 0.6rem;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: background 0.3s;
+            font-size: 0.75rem;
+            cursor: pointer;
+        }
+
+        .dev-mode-toggle:hover {
+            background: rgba(255,255,255,0.3);
+        }
+
+        .dev-mode-toggle.active {
+            background: #ff6b6b;
+            border-color: #ff5252;
+        }
+
+        .dev-mode-panel {
+            position: fixed;
+            top: 100px;
+            right: 20px;
+            background: white;
+            border: 2px solid #2ba3c7;
+            border-radius: 8px;
+            padding: 1rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+            z-index: 1001;
+            min-width: 280px;
+            display: none;
+        }
+
+        .dev-mode-panel.active {
+            display: block;
+        }
+
+        .dev-mode-panel h3 {
+            margin: 0 0 1rem 0;
+            color: #2ba3c7;
+            font-size: 1.1rem;
+            border-bottom: 2px solid #2ba3c7;
+            padding-bottom: 0.5rem;
+        }
+
+        .dev-control-group {
+            margin-bottom: 1rem;
+        }
+
+        .dev-control-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .dev-control-group input {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 0.9rem;
+        }
+
+        .dev-control-group input:focus {
+            outline: none;
+            border-color: #2ba3c7;
+            box-shadow: 0 0 0 2px rgba(43, 163, 199, 0.2);
+        }
+
+        .dev-buttons {
+            display: flex;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .dev-btn {
+            flex: 1;
+            padding: 0.5rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.8rem;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .dev-btn.primary {
+            background: #2ba3c7;
+            color: white;
+        }
+
+        .dev-btn.primary:hover {
+            background: #1e8aa8;
+        }
+
+        .dev-btn.secondary {
+            background: #f8f9fa;
+            color: #666;
+            border: 1px solid #ddd;
+        }
+
+        .dev-btn.secondary:hover {
+            background: #e9ecef;
+        }
+
+        .dev-status {
+            background: #f8f9fa;
+            padding: 0.5rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            color: #666;
+            margin-top: 0.5rem;
+        }
+
+        .dev-presets {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid #eee;
+        }
+
+        .dev-presets h4 {
+            margin: 0 0 0.5rem 0;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .dev-preset-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.3rem;
+        }
+
+        .dev-preset-btn {
+            padding: 0.3rem 0.6rem;
+            background: #f0f8ff;
+            border: 1px solid #2ba3c7;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .dev-preset-btn:hover {
+            background: #2ba3c7;
+            color: white;
+        }
+
+        /* Mobile responsive styles for dev mode */
+                /* Mobile responsive styles for dev mode */
+        @media (max-width: 767px) {
+            .dev-mode-panel {
+                top: 60px; /* Distance from the top of the viewport */
+                right: 10px;
+                left: 10px;
+                min-width: auto;
+                max-width: none; /* Allow it to use the full width between left/right 10px */
+                
+                /* --- Added for scrollability --- */
+                max-height: calc(100vh - 80px); /* 100% viewport height - 60px top offset - 20px bottom buffer */
+                overflow-y: auto; /* Enable vertical scroll if content exceeds max-height */
+                /* --- End of added styles --- */
+            }
+            
+            .dev-mode-toggle {
+                padding: 0.25rem 0.5rem;
+                font-size: 0.7rem;
+            }
+            
+            .dev-preset-buttons {
+                justify-content: center;
+            }
+            
+            .dev-preset-btn {
+                flex: 1;
+                min-width: 0;
+                text-align: center;
+            }
+        }
+
+        .header-right span {
+            color: white;
+            font-weight: 500;
+        }
+
+        .sign-in-btn {
+            background: rgba(255,255,255,0.2);
+            border: 1px solid rgba(255,255,255,0.3);
+            color: white;
+            padding: 0.3rem 0.6rem;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: background 0.3s;
+            font-size: 0.75rem;
+        }
+
+        .sign-in-btn:hover {
+            background: rgba(255,255,255,0.3);
+        }
+
+        /* Navigation */
+        .nav-bar {
+            background: white;
+            color: #333;
+            padding: 0.4rem 0;
+            position: relative;
+            z-index: 999;
+            border-bottom: 1px solid #eee;
+        }
+
+        .nav-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.2rem;
+            overflow-x: auto;
+            padding: 0.2rem 0;
+        }
+
+        .nav-links a {
+            color: #333;
+            text-decoration: none;
+            white-space: nowrap;
+            padding: 0.3rem 0.6rem;
+            border-radius: 4px;
+            transition: background 0.3s;
+            font-size: 0.8rem;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            background: #f0f0f0;
+            color: #2ba3c7;
+        }
+
+        /* Main Content Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+
+        /* Breadcrumb */
+        .breadcrumb {
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        .breadcrumb a {
+            color: #2ba3c7;
+            text-decoration: none;
+        }
+
+        /* Article Content */
+        .article-content {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .article-header {
+            padding: 2rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .article-title {
+            font-size: 2.2rem;
+            font-weight: bold;
+            line-height: 1.3;
+            margin-bottom: 1rem;
+            color: #1a1a1a;
+        }
+
+        .article-subtitle {
+            font-size: 1.1rem;
+            color: #666;
+            line-height: 1.5;
+            margin-bottom: 1.5rem;
+        }
+
+        .article-meta {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .author-info {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .author-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: #666;
+        }
+
+        .timestamp {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        /* Follow Us Section */
+        .follow-us-section {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-top: 1.5rem;
+            padding: 1rem 0;
+            border-top: 1px solid #eee;
+            background: white;
+            transition: all 0.3s ease;
+        }
+
+        .follow-us-section.sticky {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 999;
+            padding: 0.8rem 1rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border-top: none;
+            border-bottom: 1px solid #eee;
+            margin: 0;
+            transition: top 0.3s ease;
+        }
+
+        .follow-us-label {
+            font-weight: 600;
+            color: #333;
+            font-size: 0.9rem;
+        }
+
+        .follow-us-icons {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+
+        .follow-icon {
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+            padding: 0.4rem 0.6rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            text-decoration: none;
+            color: #666;
+            transition: all 0.3s ease;
+            background: white;
+        }
+
+        .follow-icon:hover {
+            background: #f8f9fa;
+            border-color: #2ba3c7;
+            color: #2ba3c7;
+        }
+
+        .whatsapp-icon {
+            color: #25D366;
+        }
+
+        .whatsapp-icon:hover {
+            background: #f0f8f4;
+            border-color: #25D366;
+            color: #25D366;
+        }
+
+        .google-news-icon {
+            color: #4285f4;
+        }
+
+        .google-news-icon:hover {
+            background: #f2f6ff;
+            border-color: #4285f4;
+            color: #4285f4;
+        }
+
+        .comments-icon {
+            position: relative;
+        }
+
+        .comment-count {
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .share-icon {
+            color: #666;
+        }
+
+        /* Main Image */
+        .main-image {
+            position: relative;
+            margin: 0 2rem 2rem;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .main-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .image-caption {
+            background: rgba(0,0,0,0.8);
+            color: white;
+            padding: 1rem;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            font-size: 0.9rem;
+        }
+
+        /* Article Body */
+        .article-body {
+            padding: 0 2rem 2rem;
+        }
+
+        .article-body p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+
+        .quote {
+            background: #f8f9fa;
+            border-left: 4px solid #2ba3c7;
+            padding: 1rem;
+            margin: 2rem 0;
+            font-style: italic;
+            border-radius: 4px;
+        }
+
+        /* Video Player */
+        .video-container {
+            margin: 2rem 0;
+            position: relative;
+            background: #000;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .video-placeholder {
+            width: 100%;
+            height: 300px;
+            background: linear-gradient(45deg, #1a1a1a, #333);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+        }
+
+        .play-button {
+            width: 80px;
+            height: 80px;
+            background: rgba(255,255,255,0.9);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .play-button:hover {
+            transform: scale(1.1);
+        }
+
+        /* Sidebar */
+        .sidebar {
+            display: none;
+        }
+
+        .sidebar-section {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+            overflow: hidden;
+        }
+
+        .sidebar-header {
+            background: #2ba3c7;
+            color: white;
+            padding: 1rem;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .sidebar-content {
+            padding: 1rem;
+        }
+
+        .news-item {
+            display: flex;
+            gap: 1rem;
+            padding: 1rem 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .news-item:last-child {
+            border-bottom: none;
+        }
+
+        .news-thumbnail {
+            width: 80px;
+            height: 60px;
+            background: #ddd;
+            border-radius: 4px;
+            flex-shrink: 0;
+        }
+
+        .news-content h4 {
+            font-size: 0.9rem;
+            line-height: 1.4;
+            margin-bottom: 0.5rem;
+        }
+
+        .news-content h4 a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+
+        .news-content h4 a:hover {
+            color: #2ba3c7;
+        }
+
+        .news-time {
+            font-size: 0.8rem;
+            color: #666;
+        }
+
+        /* Related Articles */
+        .related-articles {
+            margin-top: 3rem;
+            padding: 2rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .related-articles h3 {
+            display: none; /* Hide the Related Articles heading */
+        }
+
+        .related-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            width: 100%; /* Ensure full width */
+        }
+
+        .related-item {
+            display: flex;
+            gap: 1rem;
+            padding: 1rem;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            transition: box-shadow 0.3s;
+        }
+
+        .related-item:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .related-thumbnail {
+            width: 80px;
+            height: 60px;
+            background: #ddd;
+            border-radius: 4px;
+            flex-shrink: 0;
+        }
+
+        .related-content h4 {
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+
+        .related-content h4 a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+
+        .related-content h4 a:hover {
+            color: #2ba3c7;
+        }
+
+        /* Desktop Sticky Related Articles */
+        @media (min-width: 768px) {
+            .related-articles {
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: 0;
+                padding: 0.5rem;
+                border-radius: 0;
+                border-top: 1px solid #ddd;
+                box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+                z-index: 998;
+                max-height: 80px;
+                overflow: hidden;
+            }
+
+            .related-articles::before,
+            .related-articles::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                width: 30px;
+                pointer-events: none;
+                z-index: 10;
+            }
+
+            .related-articles::before {
+                left: 0;
+                background: linear-gradient(to right, white 0%, rgba(255,255,255,0.8) 50%, transparent 100%);
+            }
+
+            .related-articles::after {
+                right: 0;
+                background: linear-gradient(to left, white 0%, rgba(255,255,255,0.8) 50%, transparent 100%);
+            }
+
+            .related-articles h3 {
+                display: none; /* Hide heading on desktop too */
+            }
+
+            .related-grid {
+                display: flex;
+                gap: 0.5rem;
+                max-width: 100%; /* Full width instead of 1200px */
+                margin: 0;
+                overflow-x: auto;
+                padding-bottom: 0;
+                scroll-behavior: smooth;
+                scrollbar-width: thin;
+                scrollbar-color: #ccc transparent;
+                width: 100%; /* Ensure full width */
+            }
+
+            .related-grid::-webkit-scrollbar {
+                height: 4px;
+            }
+
+            .related-grid::-webkit-scrollbar-track {
+                background: transparent;
+            }
+
+            .related-grid::-webkit-scrollbar-thumb {
+                background: #ccc;
+                border-radius: 2px;
+            }
+
+            .related-grid::-webkit-scrollbar-thumb:hover {
+                background: #999;
+            }
+
+            .related-item {
+                min-width: 240px;
+                max-width: 240px;
+                padding: 0.3rem;
+                gap: 0.3rem;
+                flex-shrink: 0;
+                border: 1px solid #eee;
+                border-radius: 6px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+            }
+
+            .related-item:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+                border-color: #2ba3c7;
+            }
+
+            .related-thumbnail {
+                width: 50px;
+                height: 35px;
+            }
+
+            .related-content h4 {
+                font-size: 0.7rem;
+                line-height: 1.2;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                margin: 0;
+            }
+        }
+
+        /* Advertisement Placeholder */
+        .ad-placeholder {
+            background: #f0f0f0;
+            border: 2px dashed #ccc;
+            padding: 2rem;
+            text-align: center;
+            color: #666;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        /* Mobile Bottom Navigation */
+        .mobile-bottom-container {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .sticky-ad {
+            background: #f0f0f0;
+            color: #666;
+            padding: 1.4rem 1rem;
+            text-align: center;
+            font-size: 0.95rem;
+            font-weight: 500;
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .sticky-ad:hover {
+            background: #e8e8e8;
+        }
+
+        .sticky-ad-close {
+            position: absolute;
+            right: 0.5rem;
+            background: #ccc;
+            border: none;
+            color: #666;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            font-size: 0.7rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .mobile-nav {
+            display: flex;
+            background: white;
+            border-top: 1px solid #eee;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+        }
+
+        .mobile-nav-item {
+            flex: 1;
+            padding: 0.4rem 0.3rem;
+            text-align: center;
+            text-decoration: none;
+            color: #666;
+            font-size: 0.65rem;
+            border-right: 1px solid #eee;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.1rem;
+        }
+
+        .mobile-nav-item:last-child {
+            border-right: none;
+        }
+
+        .mobile-nav-item.active {
+            color: #2ba3c7;
+            background: #f8f9fa;
+        }
+
+        .mobile-nav-icon {
+            font-size: 1.1rem;
+        }
+
+        /* Mobile Main Navigation */
+        .mobile-main-nav {
+            display: none;
+            background: #1a1a1a;
+            color: white;
+            padding: 0.3rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            overflow-x: auto;
+            transition: transform 0.3s ease;
+            /* Hide scrollbar */
+            scrollbar-width: none; /* Firefox */
+            -ms-overflow-style: none; /* IE and Edge */
+        }
+
+        .mobile-main-nav::-webkit-scrollbar {
+            display: none; /* Chrome, Safari, Opera */
+        }
+
+        .mobile-main-nav.hidden {
+            transform: translateY(-100%);
+            pointer-events: none;
+        }
+
+        .mobile-main-nav-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .mobile-main-nav-links {
+            display: flex;
+            gap: 0.8rem;
+            padding: 0.2rem 0;
+            white-space: nowrap;
+        }
+
+        .mobile-main-nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 0.75rem;
+            padding: 0.2rem 0.4rem;
+            border-radius: 3px;
+            transition: background 0.3s;
+        }
+
+        .mobile-main-nav-links a:hover {
+            background: rgba(255,255,255,0.1);
+        }
+
+        .mobile-nav-separator {
+            color: rgba(255,255,255,0.6);
+            font-size: 0.6rem;
+        }
+
+        /* Sidebar Ad Slot 300x250 */
+        .sidebar-ad-slot {
+            background: #f0f0f0;
+            border: 2px dashed #ccc;
+            width: 300px;
+            height: 250px;
+            margin: 0 auto 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            font-size: 1rem;
+            font-weight: 500;
+            text-align: center;
+            position: relative;
+        }
+
+        .sidebar-ad-slot::before {
+            content: 'ADVERTISEMENT';
+            position: absolute;
+            top: 0.5rem;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 0.7rem;
+            color: #999;
+            background: #f0f0f0;
+            padding: 0.2rem 0.4rem;
+        }
+
+        /* Desktop Ad Slot */
+        .desktop-ad-banner {
+            display: none;
+            background: #f0f0f0;
+            border: 2px dashed #ccc;
+            padding: 3rem 2rem;
+            text-align: center;
+            color: #666;
+            margin: 1.5rem auto;
+            max-width: 1200px;
+            font-size: 1.2rem;
+            font-weight: 500;
+            min-height: 200px;
+            position: relative;
+        }
+
+        .desktop-ad-banner::before {
+            content: 'ADVERTISEMENT';
+            position: absolute;
+            top: 0.5rem;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 0.8rem;
+            color: #999;
+            background: #f0f0f0;
+            padding: 0.2rem 0.5rem;
+        }
+
+        /* Meter Notification Banner */
+        .meter-banner {
+            background: linear-gradient(135deg, #fff3cd, #ffeaa7);
+            color: #8b4513;
+            padding: 0.5rem 1rem 0.5rem; /* Reduced bottom padding to match mobile spacing */
+            text-align: center;
+            position: relative;
+            z-index: 997;
+            box-shadow: 0 3px 8px rgba(43, 163, 199, 0.2);
+        }
+
+        /* Progress Bar Styles */
+        .meter-progress-container {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 0 0 4px 4px;
+            overflow: hidden;
+            /* Mobile optimization */
+            -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+            will-change: transform;
+        }
+
+        .meter-progress-bar {
+            height: 100%;
+            width: 0%;
+            border-radius: 0 0 4px 4px;
+            transition: all 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+            /* Mobile GPU acceleration */
+            -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+            will-change: width;
+        }
+
+        .meter-progress-bar::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, 
+                transparent, 
+                rgba(255, 255, 255, 0.4), 
+                transparent
+            );
+            animation: progressShimmer 2s ease-in-out infinite;
+        }
+
+        /* Progress Bar Color States - All use orange for visibility against yellow banner */
+        .meter-progress-bar.low-usage {
+            background: linear-gradient(90deg, #fd7e14, #ff922b);
+        }
+
+        .meter-progress-bar.medium-usage {
+            background: linear-gradient(90deg, #fd7e14, #ff922b);
+        }
+
+        .meter-progress-bar.high-usage {
+            background: linear-gradient(90deg, #fd7e14, #ff922b);
+        }
+
+        .meter-progress-bar.critical-usage {
+            background: linear-gradient(90deg, #fd7e14, #ff922b);
+            animation: progressPulse 2s ease-in-out infinite;
+        }
+
+        @keyframes progressShimmer {
+            0% { 
+                left: -100%; 
+                -webkit-transform: translateX(0);
+                transform: translateX(0);
+            }
+            100% { 
+                left: 100%; 
+                -webkit-transform: translateX(0);
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes progressPulse {
+            0%, 100% { 
+                opacity: 1;
+                -webkit-transform: scale(1);
+                transform: scale(1);
+            }
+            50% { 
+                opacity: 0.8;
+                -webkit-transform: scale(1.02);
+                transform: scale(1.02);
+            }
+        }
+
+        .meter-banner-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.6rem;
+            flex-wrap: wrap;
+        }
+
+        .meter-text {
+            font-size: 0.9rem;
+            font-weight: 700;
+            text-shadow: 0 1px 2px rgba(255,255,255,0.8);
+        }
+
+        .meter-actions {
+            display: flex;
+            gap: 0.4rem;
+            align-items: center;
+        }
+
+        .meter-actions span {
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .meter-btn {
+            background: linear-gradient(135deg, #2ba3c7, #1e8aa8);
+            color: white;
+            border: none;
+            padding: 0.4rem 0.8rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 0.8rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 4px rgba(43, 163, 199, 0.3);
+            letter-spacing: 0.3px;
+        }
+
+        .meter-btn:hover {
+            background: linear-gradient(135deg, #1e8aa8, #1565c0);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 8px rgba(43, 163, 199, 0.4);
+        }
+
+        .meter-btn.secondary {
+            background: transparent;
+            color: #2ba3c7;
+            border: 2px solid #2ba3c7;
+            padding: 0.3rem 0.8rem;
+            text-transform: none;
+            letter-spacing: normal;
+        }
+
+        .meter-btn.secondary:hover {
+            background: #2ba3c7;
+            color: white;
+            transform: translateY(-1px);
+        }
+
+        .meter-dismiss {
+            position: absolute;
+            right: 0.8rem;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            font-size: 1rem;
+            color: #8b4513;
+            cursor: pointer;
+            padding: 0.2rem;
+            line-height: 1;
+            width: 18px;
+            height: 18px;
+        }
+
+        .meter-dismiss:hover {
+            color: #5d2e0a;
+        }
+
+        /* Login Wall Styles */
+        .article-body.paywall-active {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .paywall-fade-container {
+            position: relative;
+        }
+
+        .paywall-fade-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 120px;
+            background: linear-gradient(to bottom, 
+                rgba(255, 255, 255, 0) 0%,
+                rgba(255, 255, 255, 0.6) 30%,
+                rgba(255, 255, 255, 0.9) 60%,
+                rgba(255, 255, 255, 1) 100%
+            );
+            pointer-events: none;
+            z-index: 2;
+            display: none; /* Hidden by default */
+        }
+
+        .paywall-content {
+            /* Normal state - fully visible when paywall not active */
+            opacity: 1;
+            pointer-events: auto;
+            user-select: auto;
+            position: relative;
+        }
+
+        .paywall-content.faded {
+            /* Keep content readable, just add overlay fade */
+            opacity: 1;
+            pointer-events: none;
+            user-select: none;
+        }
+
+        .paywall-prompt {
+            background: linear-gradient(135deg, #f8f9fa, #ffffff);
+            border: 2px solid #2ba3c7;
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 2rem 0;
+            text-align: center;
+            box-shadow: 0 8px 32px rgba(43, 163, 199, 0.15);
+            position: relative;
+            z-index: 3;
+        }
+
+        .paywall-prompt h3 {
+            color: #1a1a1a;
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            line-height: 1.3;
+        }
+
+        .paywall-prompt p {
+            color: #666;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .paywall-benefits {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 1.5rem 0;
+            flex-wrap: wrap;
+        }
+
+        .paywall-benefit {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #2ba3c7;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .paywall-benefit-icon {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #2ba3c7;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            flex-shrink: 0;
+        }
+
+        .paywall-actions {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .paywall-btn {
+            padding: 0.8rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            min-width: 160px;
+            justify-content: center;
+        }
+
+        .paywall-btn.primary {
+            background: linear-gradient(135deg, #2ba3c7, #1e8aa8);
+            color: white;
+            box-shadow: 0 4px 12px rgba(43, 163, 199, 0.3);
+        }
+
+        .paywall-btn.primary:hover {
+            background: linear-gradient(135deg, #1e8aa8, #1565c0);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(43, 163, 199, 0.4);
+        }
+
+        .paywall-btn.secondary {
+            background: transparent;
+            color: #2ba3c7;
+            border: 2px solid #2ba3c7;
+        }
+
+        .paywall-btn.secondary:hover {
+            background: #2ba3c7;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .paywall-social-login {
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #eee;
+        }
+
+        .paywall-social-text {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .paywall-social-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .paywall-social-btn {
+            padding: 0.6rem 1.2rem;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            background: white;
+            color: #333;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .paywall-social-btn:hover {
+            border-color: #2ba3c7;
+            background: #f8f9fa;
+            transform: translateY(-1px);
+        }
+
+        .paywall-dismiss {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: #f8f9fa;
+            border: 1px solid #ddd;
+            border-radius: 50%;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            color: #666;
+            font-size: 1.2rem;
+        }
+
+        .paywall-dismiss:hover {
+            background: #e9ecef;
+            border-color: #999;
+            color: #333;
+        }
+
+        /* Content Block Styles */
+        .content-block {
+            position: relative;
+            margin-bottom: 1rem;
+        }
+        
+        .block-marker {
+            position: absolute;
+            top: -8px;
+            right: 8px;
+            background: #2ba3c7;
+            color: white;
+            font-size: 0.7rem;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-weight: 600;
+            z-index: 10;
+            opacity: 0.8;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+            display: none; /* Hidden by default */
+        }
+        
+        /* Only show visual indicators in dev mode */
+        .dev-mode-active .block-marker {
+            display: block !important;
+        }
+        
+        .dev-mode-active .content-block.reached {
+            background: linear-gradient(90deg, rgba(43, 163, 199, 0.1) 0%, transparent 100%);
+            border-left: 3px solid #2ba3c7;
+            padding-left: 1rem;
+            margin-left: -1rem;
+        }
+        
+        .dev-mode-active .content-block.trigger-point {
+            background: linear-gradient(90deg, rgba(255, 107, 107, 0.1) 0%, transparent 100%);
+            border-left: 3px solid #ff6b6b;
+            padding-left: 1rem;
+            margin-left: -1rem;
+        }
+        
+        .dev-mode-active .content-block.trigger-point .block-marker {
+            background: #ff6b6b;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 0.8; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.05); }
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 767px) {
+            .paywall-prompt {
+                padding: 1.5rem;
+                margin: 1.5rem 0;
+                border-radius: 8px;
+            }
+
+            .paywall-prompt h3 {
+                font-size: 1.4rem;
+            }
+
+            .paywall-prompt p {
+                font-size: 1rem;
+            }
+
+            .paywall-benefits {
+                flex-direction: column;
+                gap: 1rem;
+                align-items: center;
+            }
+
+            .paywall-actions {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .paywall-btn {
+                min-width: auto;
+                width: 100%;
+            }
+
+            .paywall-social-buttons {
+                flex-direction: column;
+            }
+
+            .paywall-social-btn {
+                justify-content: center;
+                width: 100%;
+            }
+
+            .paywall-fade-overlay {
+                height: 45px;
+                background: linear-gradient(to bottom, 
+                    rgba(255, 255, 255, 0) 0%,
+                    rgba(255, 255, 255, 0.6) 30%,
+                    rgba(255, 255, 255, 0.9) 60%,
+                    rgba(255, 255, 255, 1) 100%
+                );
+            }
+        }
+
+        /* Desktop Layout */
+        @media (min-width: 768px) {
+            body {
+                padding-bottom: 80px; /* Account for reduced height of sticky related articles */
+            }
+
+            .top-header {
+                position: sticky;
+                top: 0;
+            }
+
+            .mobile-main-nav {
+                display: none;
+            }
+
+            .nav-bar {
+                position: relative;
+                background: #1a1a1a;
+                color: white;
+                border-bottom: none;
+            }
+
+            .nav-links a {
+                color: white;
+            }
+
+            .nav-links a:hover,
+            .nav-links a.active {
+                background: #2ba3c7;
+                color: white;
+            }
+            
+            .follow-us-section.sticky {
+                position: fixed !important;
+                top: 59px !important;
+                left: calc(50% - 600px + 1rem) !important;
+                transform: none !important;
+                width: calc((1200px - 3rem - 2rem) * 2 / 3) !important; /* Main content: 2fr of 3fr grid */
+                max-width: calc((1200px - 3rem - 2rem) * 2 / 3) !important;
+                margin: 0 !important;
+                padding: 0.8rem 1rem !important;
+                border-radius: 8px !important;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.15) !important;
+                z-index: 999 !important;
+                background: white !important;
+                border: 1px solid #ddd !important;
+            }
+            
+            .container {
+                grid-template-columns: 2fr 1fr;
+                gap: 3rem;
+            }
+
+            .sidebar {
+                display: block;
+            }
+
+            .desktop-ad-banner {
+                display: block;
+            }
+
+            .mobile-bottom-container {
+                display: none;
+            }
+
+            .mobile-nav {
+                display: none;
+            }
+
+            .article-title {
+                font-size: 2.8rem;
+            }
+
+            .nav-links {
+                overflow: visible;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .related-articles {
+                display: none; /* Hide on mobile to avoid conflicts with bottom nav */
+            }
+
+            /* Mobile Meter Banner */
+            .meter-banner {
+                padding: 0.4rem 1rem 0.5rem; /* Reduced bottom padding for tighter spacing on mobile */
+            }
+
+            /* Mobile Progress Bar Optimizations */
+            .meter-progress-container {
+                height: 4px; /* Thinner bar for mobile - more subtle */
+            }
+
+            .meter-progress-bar {
+                transition: all 1s ease-out; /* Faster animation on mobile */
+            }
+
+            .meter-progress-bar::after {
+                animation-duration: 2.5s; /* Slower shimmer on mobile for better visibility */
+            }
+
+            /* Reduce animations on mobile for performance */
+            @media (prefers-reduced-motion: reduce) {
+                .meter-progress-bar {
+                    transition: width 0.5s ease;
+                }
+                
+                .meter-progress-bar::after,
+                .meter-progress-bar.critical-usage {
+                    animation: none;
+                }
+            }
+
+            /* Touch-friendly hover states disabled on mobile */
+            .meter-progress-container:hover {
+                /* No hover effects on mobile */
+            }
+
+            .meter-banner-content {
+                flex-direction: row;
+                gap: 0.4rem;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            .meter-text {
+                font-size: 0.8rem;
+                font-weight: 700;
+                margin-bottom: 0;
+            }
+
+            .meter-actions {
+                gap: 0.3rem;
+                align-items: center;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .meter-actions span {
+                font-size: 0.7rem;
+                font-weight: 500;
+            }
+
+            .meter-btn {
+                padding: 0.3rem 0.6rem;
+                font-size: 0.7rem;
+                min-width: auto;
+            }
+
+            .meter-btn.secondary {
+                padding: 0.2rem 0.6rem;
+            }
+
+            .meter-dismiss {
+                right: 0.5rem;
+                font-size: 0.9rem;
+                width: 16px;
+                height: 16px;
+            }
+
+            .header-content {
+                padding: 0 0.5rem;
+            }
+
+            .logo {
+                font-size: 1.5rem;
+            }
+
+            .main-nav {
+                display: none;
+            }
+
+            .mobile-main-nav {
+                display: block;
+            }
+
+            .header-right {
+                gap: 0.8rem;
+                font-size: 0.75rem;
+            }
+
+            .header-right span {
+                display: inline;
+            }
+
+            .sign-in-btn {
+                font-size: 0.7rem;
+                padding: 0.25rem 0.5rem;
+            }
+
+            .nav-bar {
+                position: relative;
+            }
+
+            .nav-links {
+                gap: 1rem;
+                padding: 0.3rem 0;
+            }
+
+            .nav-links a {
+                font-size: 0.75rem;
+                padding: 0.25rem 0.5rem;
+            }
+
+            .container {
+                padding: 1rem 0.5rem 7.5rem;
+            }
+
+            .article-header {
+                padding: 1.5rem;
+            }
+
+            .article-title {
+                font-size: 1.8rem;
+            }
+
+            .main-image {
+                margin: 0 1rem 1.5rem;
+            }
+
+            .article-body {
+                padding: 0 1.5rem 1.5rem;
+            }
+
+            .related-articles {
+                padding: 1.5rem;
+            }
+
+            .social-share {
+                margin-left: 0;
+                margin-top: 1rem;
+            }
+
+            .article-meta {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .follow-us-section {
+                flex-direction: row;
+                align-items: center;
+                gap: 0.5rem;
+                margin-top: 1rem;
+                padding: 0.8rem 0;
+            }
+
+            .follow-us-label {
+                font-size: 0.8rem;
+                white-space: nowrap;
+            }
+
+            .follow-us-icons {
+                gap: 0.4rem;
+                overflow-x: auto;
+            }
+
+            .follow-icon {
+                padding: 0.3rem 0.4rem;
+                font-size: 0.8rem;
+                min-width: auto;
+                flex-shrink: 0;
+            }
+
+            .follow-icon svg {
+                width: 16px;
+                height: 16px;
+            }
+
+            .follow-us-section.sticky {
+                padding: 0.8rem 1rem;
+                gap: 0.5rem;
+                top: 0;
+                margin: 0;
+                transition: top 0.3s ease;
+            }
+
+            .follow-us-section.sticky .follow-us-label {
+                font-size: 0.75rem;
+            }
+
+            .follow-us-section.sticky .follow-icon {
+                padding: 0.4rem 0.5rem;
+            }
+
+            .follow-us-section.sticky .follow-icon svg {
+                width: 18px;
+                height: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Header -->
+    <header class="top-header">
+        <div class="header-content">
+            <div class="logo">DH</div>
+            <nav class="main-nav">
+                <a href="file:///C:/Users/suhas.bhandari/Downloads/Claude/Experiments/Paywall/V5/index.html#">Home</a>
+                <span class="nav-separator">|</span>
+                <a href="file:///C:/Users/suhas.bhandari/Downloads/Claude/Experiments/Paywall/V5/index.html#">India</a>
+                <span class="nav-separator">|</span>
+                <a href="file:///C:/Users/suhas.bhandari/Downloads/Claude/Experiments/Paywall/V5/index.html#">Karnataka</a>
+                <span class="nav-separator">|</span>
+                <a href="file:///C:/Users/suhas.bhandari/Downloads/Claude/Experiments/Paywall/V5/index.html#">Opinion</a>
+                <span class="nav-separator">|</span>
+                <a href="file:///C:/Users/suhas.bhandari/Downloads/Claude/Experiments/Paywall/V5/index.html#">World</a>
+                <span class="nav-separator">|</span>
+                <a href="file:///C:/Users/suhas.bhandari/Downloads/Claude/Experiments/Paywall/V5/index.html#">Business</a>
+                <span class="nav-separator">|</span>
+                <a href="file:///C:/Users/suhas.bhandari/Downloads/Claude/Experiments/Paywall/V5/index.html#">Sports</a>
+                <span class="nav-separator">|</span>
+                <a href="file:///C:/Users/suhas.bhandari/Downloads/Claude/Experiments/Paywall/V5/index.html#">Video</a>
+            </nav>
+            <div class="header-right">
+                <span>Newsletters 🔒</span>
+                <span>ePaper ↗</span>
+                <a href="file:///C:/Users/suhas.bhandari/Downloads/Claude/Experiments/Paywall/V5/index.html#" class="sign-in-btn">👤 Sign in</a>
+                <button style="background: none; border: none; color: white; font-size: 1rem; padding: 0.2rem;">🔍</button>
+                <button class="dev-mode-toggle" id="devModeToggle" onclick="toggleDevMode()">🔧 Dev</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Dev Mode Panel -->
+    <div class="dev-mode-panel" id="devModePanel">
+        <h3>🔧 Dev Mode - Login Meter</h3>
+        
+        <div class="dev-control-group">
+            <label for="currentArticles">Current Articles Used:</label>
+            <input type="number" id="currentArticles" min="0" max="20" value="4">
+        </div>
+        
+        <div class="dev-control-group">
+            <label for="totalArticles">Total Articles Limit:</label>
+            <input type="number" id="totalArticles" min="1" max="20" value="5">
+        </div>
+        
+        <div class="dev-buttons">
+            <button class="dev-btn primary" onclick="applyMeterSettings()">Apply Settings</button>
+            <button class="dev-btn secondary" onclick="resetMeterSettings()">Reset</button>
+        </div>
+        
+        <div class="dev-status" id="devStatus">
+            Current: 4/5 articles (80% used)
+        </div>
+        
+        <div class="dev-presets">
+            <h4>Quick Presets:</h4>
+            <div class="dev-preset-buttons">
+                <button class="dev-preset-btn" onclick="setMeterPreset(0, 5)">Fresh User (0/5)</button>
+                <button class="dev-preset-btn" onclick="setMeterPreset(1, 5)">Low Usage (1/5)</button>
+                <button class="dev-preset-btn" onclick="setMeterPreset(3, 5)">Medium (3/5)</button>
+                <button class="dev-preset-btn" onclick="setMeterPreset(4, 5)">High (4/5)</button>
+                <button class="dev-preset-btn" onclick="setMeterPreset(5, 5)">Limit Reached (5/5)</button>
+                <button class="dev-preset-btn" onclick="setMeterPreset(2, 10)">Premium (2/10)</button>
+            </div>
+        </div>
+        
+        <div class="dev-control-group">
+            <label for="triggerBlock">Trigger Login Wall at Block:</label>
+            <input type="number" id="triggerBlock" min="1" max="20" value="3">
+            <div class="dev-status" style="font-size: 0.7rem; margin-top: 0.3rem; color: #666;">
+                <strong>Content Block Mode:</strong> Paywall triggers when user reaches specified block (1-10)<br>
+                <strong>999 = Never:</strong> Uses article count limit instead<br>
+                <em>Note: Content block trigger overrides article count when active</em>
+            </div>
+        </div>
+        
+        <div class="dev-presets">
+            <h4>Content Block Presets:</h4>
+            <div class="dev-preset-buttons">
+                <button class="dev-preset-btn" onclick="setTriggerBlock(1)">Block 1 (Early)</button>
+                <button class="dev-preset-btn" onclick="setTriggerBlock(3)">Block 3 (Default)</button>
+                <button class="dev-preset-btn" onclick="setTriggerBlock(5)">Block 5 (Mid)</button>
+                <button class="dev-preset-btn" onclick="setTriggerBlock(10)">Block 10 (Late)</button>
+                <button class="dev-preset-btn" onclick="setTriggerBlock(999)">Never Trigger</button>
+            </div>
+        </div>
+        
+        <div class="dev-presets">
+            <h4>Paywall Controls:</h4>
+            <div class="dev-preset-buttons">
+                <button class="dev-preset-btn" onclick="activatePaywall()" style="background: #ffebee; border-color: #f44336; color: #d32f2f;">🚧 Show Paywall</button>
+                <button class="dev-preset-btn" onclick="deactivatePaywall()" style="background: #e8f5e8; border-color: #4caf50; color: #2e7d32;">✅ Hide Paywall</button>
+                <button class="dev-preset-btn" onclick="resetContentBlocks()" style="background: #fff3e0; border-color: #ff9800; color: #f57c00;">🔄 Reset Blocks</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Main Navigation -->
+    <nav class="mobile-main-nav">
+        <div class="mobile-main-nav-content">
+            <div class="mobile-main-nav-links">
+                <a href="file:///C:/Users/suhas.bhandari/Downloads/Claude/Experiments/Paywall/V5/index.html#">Home</a>
+                <span class="mobile-nav-separator">|</span>
+                <a href="file:///C:/Users/suhas.bhandari/Downloads/Claude/Experiments/Paywall/V5/index.html#">India</a>
+                <span class="mobile-nav-separator">|</span>
+                <a href="file:///C:/Users/suhas.bhandari/Downloads/Claude/Experiments/Paywall/V5/index.html#">Karnataka</a>
+                <span class="mobile-nav-separator">|</span>
+                <a href="file:///C:/Users/suhas.bhandari/Downloads/Claude/Experiments/Paywall/V5/index.html#">Opinion</a>
+                <span class="mobile-nav-separator">|</span>
+                <a href="file:///C:/Users/suhas.bhandari/Downloads/Claude/Experiments/Paywall/V5/index.html#">World</a>
+                <span class="mobile-nav-separator">|</span>
+                <a href="file:///C:/Users/suhas.bhandari/Downloads/Claude/Experiments/Paywall/V5/index.html#">Business</a>
+                <span class="mobile-nav-separator">|</span>
+                <a href="file:///C:/Users/suhas.bhandari/Downloads/Claude/Experiments/Paywall/V5/index.html#">Sports</a>
+                <span class="mobile-nav-separator">|</span>
+                <a href="file:///C:/Users/suhas.bhandari/Downloads/Claude/Experiments/Paywall/V5/index.html#">Video</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Navigation Bar -->
+    <nav class="nav-bar">
+        <div class="nav-content">
+            <div class="nav-links">
+                <a href="file:///C:/Users/suhas.bhandari/Downloads/Claude/Experiments/Paywall/V5/index.html#">Operation Sindoor</a>
+                <a href="file:///C:/Users/suhas.bhandari/Downloads/Claude/Experiments/Paywall/V5/index.html#">News Shots</a>
+                <a href="file:///C:/Users/suhas.bhandari/Downloads/Claude/Experiments/Paywall/V5/index.html#">Explainers</a>
+                <a href="file:///C:/Users/suhas.bhandari/Downloads/Claude/Experiments/Paywall/V5/index.html#">Bengaluru</a>
+                <a href="file:///C:/Users/suhas.bhandari/Downloads/Claude/Experiments/Paywall/V5/index.html#">Trending</a>
+                <a href="file:///C:/Users/suhas.bhandari/Downloads/Claude/Experiments/Paywall/V5/index.html#">Photos</a>
+                <a href="file:///C:/Users/suhas.bhandari/Downloads/Claude/Experiments/Paywall/V5/index.html#">DH Brandspot</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Meter Notification Banner -->
+    <div class="meter-banner" id="meterBanner">
+        <div class="meter-banner-content">
+            <div class="meter-text">
+                <span class="desktop-meter-text" style="display: inline;">Only 1 free article left this month.</span>
+                <span class="mobile-meter-text" style="display: none;">1 article left.</span>
+            </div>
+            <div class="meter-actions">
+                <a href="file:///C:/Users/suhas.bhandari/Downloads/Claude/Experiments/Paywall/V5/index.html#" class="meter-btn desktop-meter-btn" style="display: inline-block;">Continue reading free</a>
+                <a href="file:///C:/Users/suhas.bhandari/Downloads/Claude/Experiments/Paywall/V5/index.html#" class="meter-btn mobile-meter-btn" style="display: none;">Continue reading</a>
+                <span style="color: #856404;">or</span>
+                <a href="file:///C:/Users/suhas.bhandari/Downloads/Claude/Experiments/Paywall/V5/index.html#" class="meter-btn secondary">Log In</a>
+                <span class="desktop-meter-text" style="color: rgb(133, 100, 4); display: inline;">to keep reading.</span>
+                <span class="mobile-meter-text" style="color: rgb(133, 100, 4); display: none;">for more.</span>
+            </div>
+        </div>
+        <button class="meter-dismiss" onclick="dismissMeterBanner()" title="Dismiss">×</button>
+        
+        <!-- Progress Bar -->
+        <div class="meter-progress-container" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="Article consumption: 4 out of 5 articles used (80% of limit)">
+            <div class="meter-progress-bar high-usage" id="meterProgressBar" style="width: 80%;"></div>
+        </div>
+    </div>
+
+    <!-- Desktop Ad Banner -->
+    <div class="desktop-ad-banner">
+        Desktop Banner Advertisement Slot<br>
+        <small style="color: #999; font-size: 0.9rem;">1200 x 200px recommended</small>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Main Article -->
+        <main class="article-content">
+            <!-- Breadcrumb -->
+            <div class="breadcrumb" style="padding: 1rem 2rem 0;">
+                <a href="file:///C:/Users/suhas.bhandari/Downloads/Claude/Experiments/Paywall/V5/index.html#">Home</a> › <a href="file:///C:/Users/suhas.bhandari/Downloads/Claude/Experiments/Paywall/V5/index.html#">India</a> ›
+            </div>
+
+            <!-- Article Header -->
+            <header class="article-header">
+                <h1 class="article-title">India's 'Akashteer' system shines in Ops Sindoor, DRDO chief foresees international demand</h1>
+                <p class="article-subtitle">Kamat expressed optimism regarding the future of India's defence technology during a visit to Nagpur, where he toured facilities focused on manufacturing drones, missiles, and rockets.</p>
+                
+                <div class="article-meta">
+                    <div class="author-info">
+                        <div class="author-avatar">PTI</div>
+                        <span>PTI</span>
+                    </div>
+                    <div class="timestamp">Last Updated : 23 May 2025, 12:01 IST</div>
+                </div>
+
+                <!-- Follow Us Section -->
+                <div class="follow-us-section">
+                    <span class="follow-us-label">Follow Us :</span>
+                    <div class="follow-us-icons">
+                        <a href="file:///C:/Users/suhas.bhandari/Downloads/Claude/Experiments/Paywall/V5/index.html#" class="follow-icon whatsapp-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.893 3.488"></path>
+                            </svg>
+                        </a>
+                        <a href="file:///C:/Users/suhas.bhandari/Downloads/Claude/Experiments/Paywall/V5/index.html#" class="follow-icon google-news-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.568 8.16c-.169 1.858-.896 3.616-2.092 5.024a6.066 6.066 0 01-4.568 2.08 6.056 6.056 0 01-4.564-2.08c-1.2-1.408-1.927-3.166-2.096-5.024h13.32z"></path>
+                            </svg>
+                        </a>
+                        <a href="file:///C:/Users/suhas.bhandari/Downloads/Claude/Experiments/Paywall/V5/index.html#" class="follow-icon comments-icon">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"></path>
+                            </svg>
+                            <span class="comment-count">1</span>
+                        </a>
+                        <a href="file:///C:/Users/suhas.bhandari/Downloads/Claude/Experiments/Paywall/V5/index.html#" class="follow-icon share-icon">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="18" cy="5" r="3"></circle>
+                                <circle cx="6" cy="12" r="3"></circle>
+                                <circle cx="18" cy="19" r="3"></circle>
+                                <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                                <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Main Image -->
+            <div class="main-image">
+                <img src="data:image/svg+xml,%3Csvg xmlns=&#39;http://www.w3.org/2000/svg&#39; width=&#39;800&#39; height=&#39;400&#39; viewBox=&#39;0 0 800 400&#39;%3E%3Crect width=&#39;800&#39; height=&#39;400&#39; fill=&#39;%23e0e0e0&#39;/%3E%3Ctext x=&#39;400&#39; y=&#39;200&#39; text-anchor=&#39;middle&#39; dominant-baseline=&#39;middle&#39; font-family=&#39;Arial&#39; font-size=&#39;24&#39; fill=&#39;%23666&#39;%3EDRDO Chief Samir V Kamat%3C/text%3E%3C/svg%3E" alt="DRDO Chief Samir V Kamat">
+                <div class="image-caption">
+                    Development Organisation (DRDO) chief Samir V Kamat Credit: PTI Photo
+                </div>
+            </div>
+
+            <!-- Advertisement -->
+            <div class="ad-placeholder">
+                ADVERTISEMENT
+            </div>
+
+            <!-- Article Body -->
+            <div class="article-body" id="articleBody">
+                <div class="content-block" data-block="1" id="block-1">
+                    <div class="block-marker" style="display: none;">Block 1</div>
+                    <p><strong>Nagpur:</strong> India's top defence scientist is confident that the success of the indigenously-developed 'Akashteer' air defence system during Operation Sindoor will draw interest from other countries.</p>
+                </div>
+
+                <div class="paywall-fade-container" id="paywallContainer">
+                    
+                    <div class="paywall-content" id="paywallContent">
+                        <div class="content-block" data-block="2" id="block-2">
+                            <div class="block-marker" style="display: none;">Block 2</div>
+                            <div class="video-container">
+                                <div class="video-placeholder">
+                                    <div class="play-button">
+                                        <div style="width: 0; height: 0; border-left: 20px solid #333; border-top: 12px solid transparent; border-bottom: 12px solid transparent; margin-left: 4px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="content-block" data-block="3" id="block-3">
+                            <div class="block-marker" style="display: none;">Block 3</div>
+                            <p>'Akashteer', the fully automated air defence control and reporting system emerged as the invisible force of new war capabilities during Operation Sindoor, launched against nine terror sites in Pakistan and Pakistan-occupied <a href="file:///C:/Users/suhas.bhandari/Downloads/Claude/Experiments/Paywall/V5/index.html#" style="color: #2ba3c7;">Kashmir</a>.</p>
+                        </div>
+
+                        <div class="content-block" data-block="4" id="block-4">
+                            <div class="block-marker" style="display: none;">Block 4</div>
+                            <div class="quote">
+                                "Definitely, our air defence system has performed exceedingly well, and I am sure there will be interest from other countries," Development Research and Organisation (DRDO) chief Samir V Kamat told PTI. The development was first reported by a news portal.
+                            </div>
+                        </div>
+
+                        <div class="content-block" data-block="5" id="block-5">
+                            <div class="block-marker" style="display: none;">Block 5</div>
+                            <p>Kamat expressed optimism regarding the future of India's defence technology during a visit to Nagpur, where he toured facilities focused on manufacturing drones, missiles, and rockets.</p>
+                        </div>
+
+                        <div class="content-block" data-block="6" id="block-6">
+                            <div class="block-marker" style="display: none;">Block 6</div>
+                            <p>The DRDO chief's confidence stems from the system's performance during recent operations, where it demonstrated superior capabilities in tracking and neutralizing threats with precision and efficiency.</p>
+                        </div>
+
+                        <div class="content-block" data-block="7" id="block-7">
+                            <div class="block-marker" style="display: none;">Block 7</div>
+                            <div class="ad-placeholder">
+                                ADVERTISEMENT
+                            </div>
+                        </div>
+
+                        <div class="content-block" data-block="8" id="block-8">
+                            <div class="block-marker" style="display: none;">Block 8</div>
+                            <p>The Akashteer system represents a significant milestone in India's journey towards self-reliance in defence technology, showcasing the country's growing capabilities in developing sophisticated military systems.</p>
+                        </div>
+
+                        <div class="content-block" data-block="9" id="block-9">
+                            <div class="block-marker" style="display: none;">Block 9</div>
+                            <p>Industry experts believe this breakthrough could open doors for international collaborations and export opportunities, positioning India as a key player in the global defence technology market.</p>
+                        </div>
+
+                        <div class="content-block" data-block="10" id="block-10">
+                            <div class="block-marker" style="display: none;">Block 10</div>
+                            <p>The successful deployment of indigenous systems like Akashteer demonstrates India's commitment to reducing dependency on foreign military technology while strengthening national security capabilities.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="paywall-fade-overlay" id="paywallFadeOverlay"></div>
+                </div>
+
+                <!-- Paywall Prompt Section -->
+                                <!-- Registration Wall Prompt Section (Revised) -->
+                <div class="paywall-prompt" id="paywallPrompt" style="display: none;">
+                    <button class="paywall-dismiss" onclick="dismissPaywall()" title="Maybe Later">×</button>
+                    
+                    <h3>Unlock Full Access – It's Free!</h3> 
+                    <p>Enjoy this story and more from Deccan Herald by creating a free account or logging in. Get complete access to all our articles and features.</p>
+                    
+                    <div class="paywall-benefits">
+                        <div class="paywall-benefit">
+                            <div class="paywall-benefit-icon">✓</div>
+                            <span>Read Unlimited Articles Free</span>
+                        </div>
+                        <div class="paywall-benefit">
+                            <div class="paywall-benefit-icon">✓</div>
+                            <span>Comment on Articles</span>
+                        </div>
+                        <div class="paywall-benefit">
+                            <div class="paywall-benefit-icon">✓</div>
+                            <span>Subscribe to our Newsletters</span> 
+                        </div>
+                        <!-- Removed "Save Your Favourite Stories" -->
+                        <!-- You could add another generic benefit here if you have one, like:
+                        <div class="paywall-benefit">
+                            <div class="paywall-benefit-icon">✓</div>
+                            <span>Join the DH Community</span>
+                        </div> 
+                        Or just keep it to three benefits. -->
+                    </div>
+                    
+                    <div class="paywall-actions">
+                        <a href="#" class="paywall-btn primary" onclick="handleSignUp()">
+                            📝 Create Free Account
+                        </a>
+                        <a href="#" class="paywall-btn secondary" onclick="handleLogin()">
+                            👤 Log In
+                        </a>
+                    </div>
+                    
+                    <div class="paywall-social-login">
+                        <div class="paywall-social-text">Or quickly sign up / log in with:</div>
+                        <div class="paywall-social-buttons">
+                            <a href="#" class="paywall-social-btn" onclick="handleSocialLogin('google')">
+                                <span style="color: #4285f4;">G</span> Google
+                            </a>
+    
+                            <a href="#" class="paywall-social-btn" onclick="handleSocialLogin('apple')">
+                                <span style="color: #000;">🍎</span> Apple
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <!-- Sidebar Ad Slot 300x250 -->
+            <div class="sidebar-ad-slot">
+                Sidebar Ad Slot<br>
+                <small style="color: #999; font-size: 0.8rem;">300 x 250px</small>
+            </div>
+            
+            
+
+            <!-- News Tabs Section -->
+            <div class="sidebar-section news-tabs-container">
+                <div class="tabs-header">
+                    <div class="tab-button active" data-tab="most-read">Most Read</div>
+                    <div class="tab-button" data-tab="latest-news">Latest News</div>
+                </div>
+                
+                <!-- Most Read Tab Content -->
+                <div class="tab-content active" id="most-read-content">
+                    <div class="news-item">
+                        <div class="news-thumbnail"></div>
+                        <div class="news-content">
+                            <h4><a href="file:///C:/Users/suhas.bhandari/Downloads/Claude/Experiments/Paywall/V5/index.html#">Today's Horoscope – May 26, 2025: Check horoscope for all sun signs</a></h4>
+                            <div class="news-time">15 hours ago</div>
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <div class="news-thumbnail"></div>
+                        <div class="news-content">
+                            <h4><a href="file:///C:/Users/suhas.bhandari/Downloads/Claude/Experiments/Paywall/V5/index.html#">Weekly Horoscope – May 25 to May 31, 2025: Check horoscope for all sun signs</a></h4>
+                            <div class="news-time">25 May 2025, 00:10 IST</div>
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <div class="news-thumbnail"></div>
+                        <div class="news-content">
+                            <h4><a href="file:///C:/Users/suhas.bhandari/Downloads/Claude/Experiments/Paywall/V5/index.html#">Coders at Amazon say jobs have begun to resemble warehouse work</a></h4>
+                            <div class="news-time">23 hours ago</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Latest News Tab Content -->
+                <div class="tab-content" id="latest-news-content">
+                    <div class="news-item">
+                        <div class="news-thumbnail"></div>
+                        <div class="news-content">
+                            <h4><a href="file:///C:/Users/suhas.bhandari/Downloads/Claude/Experiments/Paywall/V5/index.html#">China India's 'primary adversary', Pak mere security problem: US</a></h4>
+                            <div class="news-time">16 hours ago</div>
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <div class="news-thumbnail"></div>
+                        <div class="news-content">
+                            <h4><a href="file:///C:/Users/suhas.bhandari/Downloads/Claude/Experiments/Paywall/V5/index.html#">Promising good review of medical college for Rs 10 lakh, CBI arrests doctor</a></h4>
+                            <div class="news-time">22 hours ago</div>
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <div class="news-thumbnail"></div>
+                        <div class="news-content">
+                            <h4><a href="file:///C:/Users/suhas.bhandari/Downloads/Claude/Experiments/Paywall/V5/index.html#">Indian pilots to have norms for flying in turbulent weather: DGCA</a></h4>
+                            <div class="news-time">5 hours ago</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Advertisement -->
+            <div class="ad-placeholder">
+                ADVERTISEMENT
+            </div>
+        </aside>
+    </div>
+
+    <!-- Related Articles -->
+    <section class="related-articles">
+        <h3>Related Articles</h3>
+        <div class="related-grid">
+            <div class="related-item">
+                <div class="related-thumbnail"></div>
+                <div class="related-content">
+                    <h4><a href="file:///C:/Users/suhas.bhandari/Downloads/Claude/Experiments/Paywall/V5/index.html#">BJP MLA Kunwar Lal Meena's assembly membership...</a></h4>
+                </div>
+            </div>
+            <div class="related-item">
+                <div class="related-thumbnail"></div>
+                <div class="related-content">
+                    <h4><a href="file:///C:/Users/suhas.bhandari/Downloads/Claude/Experiments/Paywall/V5/index.html#">State government has all powers to rename Ramanagara as...</a></h4>
+                </div>
+            </div>
+            <div class="related-item">
+                <div class="related-thumbnail"></div>
+                <div class="related-content">
+                    <h4><a href="file:///C:/Users/suhas.bhandari/Downloads/Claude/Experiments/Paywall/V5/index.html#">'LoP or Nishan-e-Pakistan?': BJP slams Rahul as Congress...</a></h4>
+                </div>
+            </div>
+            <div class="related-item">
+                <div class="related-thumbnail"></div>
+                <div class="related-content">
+                    <h4><a href="file:///C:/Users/suhas.bhandari/Downloads/Claude/Experiments/Paywall/V5/index.html#">Andhra police bust international cyber fraud syndicate, 33...</a></h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobile Bottom Container with Ad and Navigation -->
+    <div class="mobile-bottom-container">
+        <!-- Sticky Ad -->
+        <div class="sticky-ad">
+            <span>ADVERTISEMENT</span>
+            <button class="sticky-ad-close">×</button>
+        </div>
+        
+        <!-- Mobile Bottom Navigation -->
+        <nav class="mobile-nav">
+            <a href="file:///C:/Users/suhas.bhandari/Downloads/Claude/Experiments/Paywall/V5/index.html#" class="mobile-nav-item active">
+                <div class="mobile-nav-icon">🏠</div>
+                <div>Home</div>
+            </a>
+            <a href="file:///C:/Users/suhas.bhandari/Downloads/Claude/Experiments/Paywall/V5/index.html#" class="mobile-nav-item">
+                <div class="mobile-nav-icon">📸</div>
+                <div>News Shots</div>
+            </a>
+            <a href="file:///C:/Users/suhas.bhandari/Downloads/Claude/Experiments/Paywall/V5/index.html#" class="mobile-nav-item">
+                <div class="mobile-nav-icon">📈</div>
+                <div>Trending</div>
+            </a>
+            <a href="file:///C:/Users/suhas.bhandari/Downloads/Claude/Experiments/Paywall/V5/index.html#" class="mobile-nav-item">
+                <div class="mobile-nav-icon">☰</div>
+                <div>Menu</div>
+            </a>
+        </nav>
+    </div>
+
+    <script>
+        let lastScrollTop = 0;
+        let followUsSection = null;
+        let followUsSectionTop = 0;
+        let mobileMainNav = null;
+        let isDesktop = window.innerWidth >= 768;
+        let scrollTimeout = null;
+        let isScrolling = false;
+        
+        // Meter Configuration
+        const METER_CONFIG = {
+        articlesUsed: 4,
+        articlesLimit: 5,
+        get percentage() {
+        return Math.round((this.articlesUsed / this.articlesLimit) * 100);
+        },
+        get remaining() {
+        return this.articlesLimit - this.articlesUsed;
+        }
+        };
+
+        // Dev Mode Functions
+        let devModeActive = false;
+        let paywallActive = false;
+        let contentBlockTrigger = 3; // Default trigger at block 3
+        let blockObserver = null;
+        
+        // Add debug logging function
+        function debugLog(message, data = {}) {
+            const timestamp = new Date().toLocaleTimeString();
+            console.log(`[${timestamp}] 🔍 DEBUG: ${message}`, data);
+        }
+        
+        function toggleDevMode() {
+            devModeActive = !devModeActive;
+            const toggle = document.getElementById('devModeToggle');
+            const panel = document.getElementById('devModePanel');
+            
+            debugLog('Toggle Dev Mode', { active: devModeActive, contentBlockTrigger, paywallActive });
+            
+            if (devModeActive) {
+                toggle.classList.add('active');
+                panel.classList.add('active');
+                updateDevStatus();
+                document.body.classList.add('dev-mode-active'); // Show visual indicators
+                updateTriggerPointVisual(); // Show trigger point
+                debugLog('Dev Mode ACTIVATED - Visual indicators enabled');
+                console.log('🔧 Dev Mode ACTIVATED');
+            } else {
+                toggle.classList.remove('active');
+                panel.classList.remove('active');
+                document.body.classList.remove('dev-mode-active'); // Hide all visual indicators
+                // Clean up all visual classes when exiting dev mode
+                document.querySelectorAll('.content-block').forEach(block => {
+                    block.classList.remove('reached', 'trigger-point');
+                });
+                debugLog('Dev Mode DEACTIVATED - Visual indicators disabled');
+                console.log('🔧 Dev Mode DEACTIVATED');
+            }
+        }
+        
+        function applyMeterSettings() {
+            const currentInput = document.getElementById('currentArticles');
+            const totalInput = document.getElementById('totalArticles');
+            
+            const current = parseInt(currentInput.value) || 0;
+            const total = parseInt(totalInput.value) || 1;
+            
+            // Validate inputs
+            if (current > total) {
+                alert('Current articles cannot exceed total articles!');
+                currentInput.value = total;
+                return;
+            }
+            
+            if (total < 1) {
+                alert('Total articles must be at least 1!');
+                totalInput.value = 1;
+                return;
+            }
+            
+            // Update meter configuration
+            METER_CONFIG.articlesUsed = current;
+            METER_CONFIG.articlesLimit = total;
+            
+            // Update display
+            updateMeterDisplay();
+            initializeMeterProgress();
+            updateDevStatus();
+            checkAndTriggerPaywall(); // Check if paywall should be triggered
+            
+            console.log(`🔧 Dev Mode: Applied settings ${current}/${total} articles (${METER_CONFIG.percentage}%)`);
+        }
+        
+        function resetMeterSettings() {
+            // Reset to default values
+            document.getElementById('currentArticles').value = 4;
+            document.getElementById('totalArticles').value = 5;
+            
+            METER_CONFIG.articlesUsed = 4;
+            METER_CONFIG.articlesLimit = 5;
+            
+            updateMeterDisplay();
+            initializeMeterProgress();
+            updateDevStatus();
+            checkAndTriggerPaywall(); // Check if paywall should be triggered
+            
+            console.log('🔧 Dev Mode: Reset to default settings (4/5 articles)');
+        }
+        
+        function setMeterPreset(used, limit) {
+            document.getElementById('currentArticles').value = used;
+            document.getElementById('totalArticles').value = limit;
+            
+            METER_CONFIG.articlesUsed = used;
+            METER_CONFIG.articlesLimit = limit;
+            
+            updateMeterDisplay();
+            initializeMeterProgress();
+            updateDevStatus();
+            checkAndTriggerPaywall(); // Check if paywall should be triggered
+            
+            console.log(`🔧 Dev Mode: Applied preset ${used}/${limit} articles (${METER_CONFIG.percentage}%)`);
+        }
+        
+        function updateDevStatus() {
+            const statusDiv = document.getElementById('devStatus');
+            if (statusDiv) {
+                const percentage = METER_CONFIG.percentage;
+                const remaining = METER_CONFIG.remaining;
+                const triggerMode = contentBlockTrigger === 999 ? 'Article Count' : `Block ${contentBlockTrigger}`;
+                statusDiv.textContent = `Current: ${METER_CONFIG.articlesUsed}/${METER_CONFIG.articlesLimit} articles (${percentage}% used, ${remaining} remaining) | Trigger Mode: ${triggerMode}`;
+            }
+        }
+        
+        // Content Block Functions
+        function setTriggerBlock(blockNumber) {
+            debugLog('Setting trigger block', { 
+                oldTrigger: contentBlockTrigger, 
+                newTrigger: blockNumber, 
+                paywallActive, 
+                articleRemaining: METER_CONFIG.remaining 
+            });
+            
+            contentBlockTrigger = blockNumber;
+            document.getElementById('triggerBlock').value = blockNumber;
+            
+            // Reset all block visual states
+            resetContentBlocks();
+            
+            // Update trigger point styling
+            updateTriggerPointVisual();
+            
+            // If setting a content block trigger (not 999), ensure article count won't interfere
+            if (blockNumber !== 999) {
+                // Temporarily increase article limit to prevent article count trigger
+                if (METER_CONFIG.remaining <= 0) {
+                    debugLog('Article limit reached - increasing limit for content block testing', {
+                        oldLimit: METER_CONFIG.articlesLimit,
+                        newLimit: METER_CONFIG.articlesUsed + 3
+                    });
+                    console.log('⚠️ Article limit reached - temporarily increasing limit to test content block trigger');
+                    METER_CONFIG.articlesLimit = METER_CONFIG.articlesUsed + 3; // Give user 3 more articles
+                    updateMeterDisplay();
+                    initializeMeterProgress();
+                }
+            }
+            
+            // Re-initialize observer
+            initializeContentBlockObserver();
+            
+            // Re-check paywall trigger logic
+            checkAndTriggerPaywall();
+            
+            updateDevStatus();
+            debugLog('Trigger block set complete', { contentBlockTrigger, paywallActive });
+            console.log(`🎯 Content block trigger set to Block ${blockNumber}`);
+        }
+        
+        function resetContentBlocks() {
+            // Remove all visual indicators
+            document.querySelectorAll('.content-block').forEach(block => {
+                block.classList.remove('reached', 'trigger-point');
+            });
+            
+            // Deactivate paywall if active from content block trigger
+            if (paywallActive) {
+                deactivatePaywall();
+            }
+            
+            console.log('🔄 Content blocks reset');
+        }
+        
+        function updateTriggerPointVisual() {
+            // Remove previous trigger point styling
+            document.querySelectorAll('.content-block').forEach(block => {
+                block.classList.remove('trigger-point');
+            });
+            
+            // Add trigger point styling to the specified block
+            const triggerBlock = document.querySelector(`[data-block="${contentBlockTrigger}"]`);
+            if (triggerBlock) {
+                triggerBlock.classList.add('trigger-point');
+            }
+        }
+        
+        function initializeContentBlockObserver() {
+            debugLog('Initializing content block observer', {
+                currentTrigger: contentBlockTrigger,
+                paywallActive,
+                existingObserver: !!blockObserver
+            });
+            
+            // Disconnect existing observer
+            if (blockObserver) {
+                blockObserver.disconnect();
+                debugLog('Disconnected existing observer');
+            }
+            
+            console.log(`👀 Initializing content block observer with trigger: Block ${contentBlockTrigger}`);
+            
+            // Create new intersection observer
+            blockObserver = new IntersectionObserver((entries) => {
+                debugLog('Intersection observer callback triggered', {
+                    entriesCount: entries.length,
+                    contentBlockTrigger,
+                    paywallActive
+                });
+                
+                entries.forEach((entry, index) => {
+                    debugLog(`Processing entry ${index + 1}/${entries.length}`, {
+                        isIntersecting: entry.isIntersecting,
+                        intersectionRatio: entry.intersectionRatio,
+                        targetId: entry.target.id,
+                        targetBlock: entry.target.getAttribute('data-block')
+                    });
+                    
+                    if (entry.isIntersecting) {
+                        const blockNumber = parseInt(entry.target.getAttribute('data-block'));
+                        const blockElement = entry.target;
+                        
+                        debugLog('Block became visible', {
+                            blockNumber,
+                            blockId: blockElement.id,
+                            currentTrigger: contentBlockTrigger,
+                            paywallActive,
+                            intersectionRatio: entry.intersectionRatio
+                        });
+                        
+                        // Mark block as reached
+                        blockElement.classList.add('reached');
+                        
+                        console.log(`📍 User reached Block ${blockNumber} (trigger set to: ${contentBlockTrigger}, paywall active: ${paywallActive})`);
+                        
+                        // Check if this is the trigger block
+                        const shouldTrigger = blockNumber >= contentBlockTrigger && !paywallActive && contentBlockTrigger !== 999;
+                        
+                        debugLog('Trigger condition check', {
+                            blockNumber,
+                            contentBlockTrigger,
+                            paywallActive,
+                            blockReachedTrigger: blockNumber >= contentBlockTrigger,
+                            paywallNotActive: !paywallActive,
+                            triggerNotDisabled: contentBlockTrigger !== 999,
+                            shouldTrigger
+                        });
+                        
+                        if (shouldTrigger) {
+                            debugLog('TRIGGER CONDITIONS MET - Activating paywall', {
+                                blockNumber,
+                                contentBlockTrigger,
+                                delayMs: 500
+                            });
+                            
+                            console.log(`🚨 CONTENT BLOCK TRIGGER: Block ${blockNumber} >= ${contentBlockTrigger} - Activating paywall in 500ms...`);
+                            
+                            // Small delay to ensure smooth scrolling experience
+                            setTimeout(() => {
+                                debugLog('Executing delayed paywall activation');
+                                console.log('🚧 Activating paywall now!');
+                                activatePaywall();
+                            }, 500);
+                        } else if (contentBlockTrigger === 999) {
+                            debugLog('Content block trigger disabled (999)');
+                            console.log('ℹ️ Content block trigger disabled (set to Never) - Using article count trigger instead');
+                        } else if (paywallActive) {
+                            debugLog('Paywall already active, skipping trigger');
+                            console.log('ℹ️ Paywall already active, skipping trigger');
+                        } else {
+                            debugLog('Block reached but not trigger block', {
+                                blockNumber,
+                                contentBlockTrigger
+                            });
+                            console.log(`ℹ️ Block ${blockNumber} reached but trigger is Block ${contentBlockTrigger}`);
+                        }
+                    } else {
+                        debugLog('Block left viewport', {
+                            blockNumber: entry.target.getAttribute('data-block')
+                        });
+                    }
+                });
+            }, {
+                threshold: 0.5, // Trigger when 50% of the block is visible
+                rootMargin: '0px 0px -20% 0px' // Account for viewport positioning
+            });
+            
+            debugLog('Observer created with options', {
+                threshold: 0.5,
+                rootMargin: '0px 0px -20% 0px'
+            });
+            
+            // Observe all content blocks
+            const contentBlocks = document.querySelectorAll('.content-block');
+            debugLog('Found content blocks to observe', {
+                count: contentBlocks.length,
+                blocks: Array.from(contentBlocks).map(block => ({
+                    id: block.id,
+                    dataBlock: block.getAttribute('data-block'),
+                    visible: block.offsetParent !== null
+                }))
+            });
+            
+            console.log(`👀 Found ${contentBlocks.length} content blocks to observe`);
+            
+            contentBlocks.forEach((block, index) => {
+                const blockNumber = block.getAttribute('data-block');
+                debugLog(`Observing block ${index + 1}`, {
+                    blockNumber,
+                    id: block.id,
+                    exists: !!block,
+                    visible: block.offsetParent !== null
+                });
+                console.log(`✅ Observing Block ${blockNumber}`);
+                blockObserver.observe(block);
+            });
+            
+            debugLog('Content block observer setup complete', {
+                observedCount: contentBlocks.length,
+                triggerBlock: contentBlockTrigger
+            });
+            
+            console.log(`👀 Content block observer initialized (trigger: Block ${contentBlockTrigger})`);
+        }
+
+        // Paywall Functions
+
+                function activatePaywall() {
+            debugLog('Paywall activation requested', {
+                currentlyActive: paywallActive,
+                contentBlockTrigger,
+                articleRemaining: METER_CONFIG.remaining
+            });
+
+            if (paywallActive) {
+                debugLog('Paywall already active - skipping activation');
+                return;
+            }
+
+            paywallActive = true;
+            // Elements:
+            // articleBodyEl is the main container for the article text and the paywall elements.
+            // paywallContainer holds paywallContent and paywallFadeOverlay.
+            // paywallContent holds the actual article blocks (2-10) that will be partially visible/faded/clipped.
+            // paywallFadeOverlay is the gradient that visually obscures content.
+            // paywallPrompt is the modal/box asking the user to log in/subscribe.
+            const articleBodyEl = document.getElementById('articleBody');
+            const paywallContainer = document.getElementById('paywallContainer');
+            const paywallContent = document.getElementById('paywallContent');
+            const paywallFadeOverlay = document.getElementById('paywallFadeOverlay');
+            const paywallPrompt = document.getElementById('paywallPrompt');
+
+            const FIXED_FADE_HEIGHT_PX = 120; // Height of the fade gradient area. Match CSS or desired effect.
+
+            debugLog(`Applying paywall: Fade height ${FIXED_FADE_HEIGHT_PX}px. Content will be clipped.`);
+
+            // Ensure paywallContainer is positioned relatively (for absolute positioning of overlay)
+            // This is important if CSS doesn't guarantee it.
+            if (window.getComputedStyle(paywallContainer).position === 'static') {
+                paywallContainer.style.position = 'relative';
+            }
+
+            // Add 'faded' class to paywallContent to make its text non-interactive.
+            paywallContent.classList.add('faded');
+
+            let overlayTopRelativeToContainerPx = 0; // Top of the fade overlay, relative to paywallContainer.
+            let clearContentHeightInPaywallContentPx = 0; // Height of content within paywallContent that appears *before* the fade.
+
+            if (contentBlockTrigger === 1) {
+                // Trigger is Block 1 (which is outside paywallContent).
+                // So, fade should start at the very top of paywallContent.
+                overlayTopRelativeToContainerPx = paywallContent.offsetTop; // Offset of paywallContent within paywallContainer.
+                clearContentHeightInPaywallContentPx = 0; // No clear content *within* paywallContent before fade.
+            } else {
+                // Trigger is Block 2 or greater (these are blocks within paywallContent).
+                const triggerBlockElement = document.querySelector(`#block-${contentBlockTrigger}`);
+                if (triggerBlockElement && paywallContent.contains(triggerBlockElement)) {
+                    // top of overlay aligns with top of trigger block (relative to paywallContainer)
+                    overlayTopRelativeToContainerPx = paywallContent.offsetTop + triggerBlockElement.offsetTop;
+                    // height of content *within* paywallContent, before the trigger block (and thus before fade)
+                    clearContentHeightInPaywallContentPx = triggerBlockElement.offsetTop;
+                } else {
+                    // Fallback: If trigger block isn't found, default to fading from top of paywallContent.
+                    overlayTopRelativeToContainerPx = paywallContent.offsetTop;
+                    clearContentHeightInPaywallContentPx = 0;
+                    debugLog(`Fallback: Trigger block ${contentBlockTrigger} not found in paywallContent. Fading from top of paywallContent.`);
+                }
+            }
+
+            // Configure and display the fade overlay.
+            paywallFadeOverlay.style.top = overlayTopRelativeToContainerPx + 'px';
+            paywallFadeOverlay.style.height = FIXED_FADE_HEIGHT_PX + 'px';
+            paywallFadeOverlay.style.display = 'block'; // Make it visible.
+            debugLog(`Fade overlay: top=${paywallFadeOverlay.style.top}, height=${paywallFadeOverlay.style.height}`);
+
+            // Clip paywallContent: It should only show the clear part + the faded part.
+            const totalVisibleHeightForPaywallContent = clearContentHeightInPaywallContentPx + FIXED_FADE_HEIGHT_PX;
+            paywallContent.style.maxHeight = totalVisibleHeightForPaywallContent + 'px';
+            paywallContent.style.overflow = 'hidden'; // This does the actual clipping.
+            debugLog(`paywallContent clipped: maxHeight=${paywallContent.style.maxHeight}, overflow=hidden`);
+
+            // Display the paywall prompt. It will appear after paywallContainer in normal flow.
+            paywallPrompt.style.display = 'block';
+            debugLog(`Paywall prompt displayed in normal flow.`);
+
+            console.log(`🚧 Paywall ACTIVATED - Content clipped, faded. Prompt shown.`);
+        }
+
+        function deactivatePaywall() {
+            debugLog('Paywall deactivation requested', { currentlyActive: paywallActive });
+            if (!paywallActive) {
+                 debugLog('Paywall already inactive - skipping deactivation');
+                 return;
+            }
+
+            const paywallContainer = document.getElementById('paywallContainer');
+            const paywallContent = document.getElementById('paywallContent');
+            const paywallFadeOverlay = document.getElementById('paywallFadeOverlay');
+            const paywallPrompt = document.getElementById('paywallPrompt');
+
+            // Restore paywallContent
+            paywallContent.classList.remove('faded');
+            paywallContent.style.maxHeight = ''; // Remove height restriction
+            paywallContent.style.overflow = '';  // Remove overflow hidden
+
+            // Hide fade overlay and reset its custom styles
+            paywallFadeOverlay.style.display = 'none';
+            paywallFadeOverlay.style.top = '';
+            paywallFadeOverlay.style.height = '';
+
+            // Hide prompt
+            paywallPrompt.style.display = 'none';
+
+            // Reset positioning context if it was dynamically added by JS
+            if (paywallContainer.style.position === 'relative') {
+                 paywallContainer.style.position = ''; // Revert to CSS default (likely static)
+            }
+            // Note: articleBodyEl relative positioning was removed as prompt is in normal flow now.
+
+            paywallActive = false;
+            debugLog('Paywall DEACTIVATED: Styles reset, content interactive.');
+            console.log('✅ Paywall DEACTIVATED - Full article access restored.');
+        }
+        function dismissPaywall() {
+            deactivatePaywall();
+            console.log('👋 User dismissed paywall - Maybe later');
+            // In real implementation, you might want to set a cookie or localStorage
+            // to remember user's dismissal preference
+        }
+        
+        // Paywall Action Handlers
+        function handleSignUp() {
+            console.log('🚀 User clicked: Start Free Trial');
+            alert('Sign-up flow would be triggered here!\n\nIn a real implementation, this would:\n• Open registration modal\n• Redirect to sign-up page\n• Handle subscription flow');
+            // In real implementation, trigger sign-up flow
+        }
+        
+        function handleLogin() {
+            console.log('👤 User clicked: Log In');
+            alert('Login flow would be triggered here!\n\nIn a real implementation, this would:\n• Open login modal\n• Redirect to login page\n• Handle authentication');
+            // In real implementation, trigger login flow
+        }
+        
+        function handleSocialLogin(provider) {
+            console.log(`📱 User clicked: ${provider} social login`);
+            alert(`${provider.charAt(0).toUpperCase() + provider.slice(1)} login would be triggered here!\n\nIn a real implementation, this would:\n• Initialize ${provider} OAuth\n• Handle social authentication\n• Create/link user account`);
+            // In real implementation, trigger social OAuth flow
+        }
+        
+        // Auto-trigger paywall when limit reached
+        function checkAndTriggerPaywall() {
+            const remaining = METER_CONFIG.remaining;
+            
+            debugLog('checkAndTriggerPaywall called', {
+                articleRemaining: remaining,
+                contentBlockTrigger,
+                paywallActive,
+                calledFrom: new Error().stack.split('\n')[2]?.trim()
+            });
+            
+            console.log(`🔍 Checking paywall trigger: ${remaining} articles remaining, content block trigger: ${contentBlockTrigger}`);
+            
+            // If content block trigger is set (not 999), prioritize content block over article count
+            if (contentBlockTrigger !== 999) {
+                debugLog('Content block trigger is active, disabling article count trigger', {
+                    contentBlockTrigger,
+                    remaining,
+                    paywallActive
+                });
+                
+                console.log(`ℹ️ Content block trigger active (Block ${contentBlockTrigger}) - Article count trigger disabled`);
+                // Only deactivate paywall if user has remaining articles AND paywall is active from article count
+                if (remaining > 0 && paywallActive) {
+                    debugLog('Deactivating paywall because user has remaining articles and content block trigger is active');
+                    console.log('✅ User has remaining articles and content block trigger is set - Deactivating paywall');
+                    deactivatePaywall();
+                }
+                return; // Exit early - let content block system handle triggering
+            }
+            
+            debugLog('Using article count trigger (content block set to Never)');
+            
+            // Only use article count trigger when content block is set to "Never" (999)
+            if (remaining <= 0 && !paywallActive) {
+                debugLog('Article limit reached, activating paywall');
+                console.log('🚨 Article limit reached and no content block trigger - Triggering paywall');
+                activatePaywall();
+            } else if (remaining > 0 && paywallActive) {
+                debugLog('User has remaining articles, deactivating paywall');
+                console.log('✅ User has remaining articles - Deactivating paywall');
+                deactivatePaywall();
+            } else if (remaining <= 0 && paywallActive) {
+                debugLog('Paywall already active for limit reached user');
+                console.log('ℹ️ Paywall already active for limit reached user');
+            } else {
+                debugLog('No paywall action needed', { remaining });
+                console.log(`ℹ️ No paywall needed - User has ${remaining} articles remaining`);
+            }
+        }
+
+        // Progress Bar Animation and Management
+        function initializeMeterProgress() {
+            const progressBar = document.getElementById('meterProgressBar');
+            const progressContainer = progressBar.parentElement;
+            const percentage = METER_CONFIG.percentage;
+            const isMobile = window.innerWidth < 768;
+            
+            // Update ARIA attributes
+            progressContainer.setAttribute('aria-valuenow', percentage);
+            progressContainer.setAttribute('aria-label', 
+                `Article consumption: ${METER_CONFIG.articlesUsed} out of ${METER_CONFIG.articlesLimit} articles used (${percentage}% of limit)`
+            );
+            
+            // Determine color class based on usage
+            let colorClass = 'low-usage';
+            if (percentage >= 90) {
+                colorClass = 'critical-usage';
+            } else if (percentage >= 80) {
+                colorClass = 'high-usage';
+            } else if (percentage >= 50) {
+                colorClass = 'medium-usage';
+            }
+            
+            // Apply color class
+            progressBar.className = `meter-progress-bar ${colorClass}`;
+            
+            // Mobile-optimized animation timing
+            const animationDelay = isMobile ? 200 : 300;
+            
+            // Animate progress bar after a short delay
+            setTimeout(() => {
+                progressBar.style.width = percentage + '%';
+                console.log(`📊 Progress bar animated to ${percentage}% (${METER_CONFIG.articlesUsed}/${METER_CONFIG.articlesLimit} articles) - ${isMobile ? 'Mobile' : 'Desktop'} optimized`);
+            }, animationDelay);
+        }
+
+        // Update meter display based on usage
+        function updateMeterDisplay() {
+            const remaining = METER_CONFIG.remaining;
+            const percentage = METER_CONFIG.percentage;
+            
+            // Update text content
+            const desktopText = document.querySelector('.desktop-meter-text');
+            const mobileText = document.querySelector('.mobile-meter-text');
+            
+            if (remaining === 1) {
+                if (desktopText) desktopText.textContent = `Only ${remaining} free article left this month.`;
+                if (mobileText) mobileText.textContent = `${remaining} article left.`;
+            } else if (remaining === 0) {
+                if (desktopText) desktopText.textContent = 'You\'ve reached your free article limit.';
+                if (mobileText) mobileText.textContent = 'Limit reached.';
+            } else {
+                if (desktopText) desktopText.textContent = `Only ${remaining} free articles left this month.`;
+                if (mobileText) mobileText.textContent = `${remaining} articles left.`;
+            }
+            
+            console.log(`📰 Meter updated: ${remaining} articles remaining (${percentage}% used)`);
+        }
+
+        // Meter Banner Functions - Make globally accessible
+        window.dismissMeterBanner = function() {
+            const meterBanner = document.getElementById('meterBanner');
+            if (meterBanner) {
+                meterBanner.style.display = 'none';
+                console.log('📰 Meter banner dismissed');
+            }
+        }
+
+        // Function to update meter consumption (for testing/demo)
+        window.updateMeterConsumption = function(used, limit) {
+            METER_CONFIG.articlesUsed = used;
+            METER_CONFIG.articlesLimit = limit;
+            updateMeterDisplay();
+            initializeMeterProgress();
+            updateDevStatus(); // Update dev panel if active
+            checkAndTriggerPaywall(); // Check if paywall should be triggered
+            console.log(`🔄 Meter consumption updated: ${used}/${limit} articles`);
+        }
+
+        function updateMeterText() {
+            const desktopTexts = document.querySelectorAll('.desktop-meter-text');
+            const mobileTexts = document.querySelectorAll('.mobile-meter-text');
+            const desktopBtn = document.querySelector('.desktop-meter-btn');
+            const mobileBtn = document.querySelector('.mobile-meter-btn');
+            const isDesktop = window.innerWidth >= 768;
+            
+            // Handle text elements
+            desktopTexts.forEach(element => {
+                element.style.display = isDesktop ? 'inline' : 'none';
+            });
+            
+            mobileTexts.forEach(element => {
+                element.style.display = isDesktop ? 'none' : 'inline';
+            });
+            
+            // Handle button elements
+            if (desktopBtn) {
+                desktopBtn.style.display = isDesktop ? 'inline-block' : 'none';
+            }
+            
+            if (mobileBtn) {
+                mobileBtn.style.display = isDesktop ? 'none' : 'inline-block';
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            debugLog('DOM Content Loaded - Starting initialization');
+            
+            followUsSection = document.querySelector('.follow-us-section');
+            mobileMainNav = document.querySelector('.mobile-main-nav');
+            
+            debugLog('Initial setup', {
+                followUsSection: !!followUsSection,
+                mobileMainNav: !!mobileMainNav,
+                contentBlockTrigger,
+                paywallActive,
+                articleConfig: {
+                    used: METER_CONFIG.articlesUsed,
+                    limit: METER_CONFIG.articlesLimit,
+                    remaining: METER_CONFIG.remaining
+                }
+            });
+            
+            // Initialize meter banner
+            updateMeterText();
+            updateMeterDisplay();
+            
+            // Check if paywall should be initially activated
+            debugLog('Checking initial paywall trigger');
+            checkAndTriggerPaywall();
+            
+            // Initialize content block observer
+            debugLog('Setting up content block observer');
+            initializeContentBlockObserver();
+            
+            // Set initial trigger point visual only if dev mode will be active
+            // (trigger point will be shown when dev mode is activated)
+            
+            // Add event listener for trigger block input
+            const triggerBlockInput = document.getElementById('triggerBlock');
+            if (triggerBlockInput) {
+                debugLog('Setting up trigger block input listener');
+                triggerBlockInput.addEventListener('input', function() {
+                    const blockNumber = parseInt(this.value) || 3;
+                    debugLog('Trigger block input changed', { newValue: blockNumber });
+                    setTriggerBlock(blockNumber);
+                });
+            }
+            
+            debugLog('Content block system initialized', {
+                defaultTrigger: contentBlockTrigger,
+                visualIndicatorsHidden: true
+            });
+            console.log('🎯 Content block system initialized - Default trigger: Block 3 (visual indicators hidden until dev mode)');
+            
+            // Delay progress bar initialization slightly on mobile for better performance
+            const isMobile = window.innerWidth < 768;
+            if (isMobile) {
+                // Wait for mobile layout to settle
+                setTimeout(() => {
+                    initializeMeterProgress();
+                }, 100);
+            } else {
+                initializeMeterProgress();
+            }
+            
+            // Handle sticky ad close functionality
+            const stickyAdClose = document.querySelector('.sticky-ad-close');
+            const stickyAd = document.querySelector('.sticky-ad');
+            
+            if (stickyAdClose && stickyAd) {
+                stickyAdClose.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    stickyAd.style.display = 'none';
+                    
+                    // Update container padding to account for removed ad
+                    const container = document.querySelector('.container');
+                    if (container && window.innerWidth < 768) {
+                        container.style.paddingBottom = '5rem'; // Reduced from 7.5rem
+                    }
+                });
+                
+                // Handle ad click (excluding close button)
+                stickyAd.addEventListener('click', function(e) {
+                    if (e.target !== stickyAdClose) {
+                        // Placeholder - replace with actual ad functionality
+                    }
+                });
+            }
+            
+            console.log('🚀 Scroll tracking initialized');
+            console.log('📱 Device type:', isDesktop ? 'Desktop' : 'Mobile');
+            console.log('📝 Content blocks available: 1-10');
+            console.log('⚙️ Use Dev Mode to configure paywall trigger point');
+            
+            // Calculate the follow us section position
+            function updateFollowUsSectionTop() {
+                if (followUsSection && !followUsSection.classList.contains('sticky')) {
+                    if (isDesktop) {
+                        // Desktop: Get absolute position of Follow Us from document top
+                        const followUsRect = followUsSection.getBoundingClientRect();
+                        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                        const followUsAbsoluteTop = followUsRect.top + scrollTop;
+                        
+                        // Get blue header height
+                        const blueHeader = document.querySelector('.top-header');
+                        const blueHeaderHeight = blueHeader ? blueHeader.offsetHeight : 59;
+                        
+                        // Trigger when Follow Us top would hit bottom of blue header
+                        followUsSectionTop = followUsAbsoluteTop - blueHeaderHeight;
+                    } else {
+                        // Mobile: Keep existing calculation
+                        const articleHeader = followUsSection.closest('.article-header');
+                        const followUsOffsetTop = followUsSection.offsetTop;
+                        const articleHeaderOffsetTop = articleHeader.offsetTop;
+                        followUsSectionTop = followUsOffsetTop + articleHeaderOffsetTop - 229;
+                    }
+                }
+            }
+            
+            // Update on resize
+            window.addEventListener('resize', function() {
+                const wasDesktop = isDesktop;
+                isDesktop = window.innerWidth >= 768;
+                updateFollowUsSectionTop();
+                updateMeterText(); // Update meter text on resize
+            });
+            
+            // Initial calculation
+            updateFollowUsSectionTop();
+            
+            // Throttled scroll handler
+            function handleScroll() {
+                if (isScrolling) return;
+                isScrolling = true;
+                
+                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                const scrollDirection = scrollTop > lastScrollTop ? 'down' : 'up';
+                const isFollowUsOutOfViewport = scrollTop > followUsSectionTop;
+                const scrollDifference = Math.abs(scrollTop - lastScrollTop);
+                
+                // Only process significant scroll changes to prevent micro-scrolling loops
+                if (scrollDifference < 5) {
+                    isScrolling = false;
+                    return;
+                }
+                
+                if (isDesktop) {
+                    // Desktop behavior: Follow us becomes sticky when scrolled past blue header
+                    if (scrollTop > followUsSectionTop) {
+                        if (!followUsSection.classList.contains('sticky')) {
+                            followUsSection.classList.add('sticky');
+                        }
+                    } else {
+                        if (followUsSection.classList.contains('sticky')) {
+                            followUsSection.classList.remove('sticky');
+                        }
+                    }
+                } else {
+                    // Mobile behavior: Follow us becomes sticky and black nav hides/shows
+                    if (scrollTop > followUsSectionTop) {
+                        if (!followUsSection.classList.contains('sticky')) {
+                            followUsSection.classList.add('sticky');
+                            // Set initial position based on black nav visibility
+                            if (mobileMainNav.classList.contains('hidden')) {
+                                followUsSection.style.top = '0px';
+                            } else {
+                                const navHeight = mobileMainNav.offsetHeight;
+                                followUsSection.style.top = navHeight + 'px';
+                            }
+                        }
+                        
+                        // Only change nav state on significant scroll movements
+                        if (scrollDifference > 15) {
+                            if (scrollDirection === 'down' && !mobileMainNav.classList.contains('hidden')) {
+                                mobileMainNav.classList.add('hidden');
+                                followUsSection.style.top = '0px'; // Move follow us to top when black nav hidden
+                            } else if (scrollDirection === 'up' && mobileMainNav.classList.contains('hidden')) {
+                                mobileMainNav.classList.remove('hidden');
+                                const navHeight = mobileMainNav.offsetHeight;
+                                followUsSection.style.top = navHeight + 'px'; // Push follow us down by exact nav height
+                            }
+                        }
+                    } else {
+                        if (followUsSection.classList.contains('sticky')) {
+                            followUsSection.classList.remove('sticky');
+                            followUsSection.style.top = ''; // Reset inline style
+                        }
+                        if (mobileMainNav.classList.contains('hidden')) {
+                            mobileMainNav.classList.remove('hidden');
+                        }
+                    }
+                }
+                
+                lastScrollTop = scrollTop;
+                
+                // Reset scrolling flag after a short delay
+                setTimeout(() => {
+                    isScrolling = false;
+                }, 50);
+            }
+            
+            // Use throttled scroll event
+            window.addEventListener('scroll', function() {
+                if (scrollTimeout) {
+                    clearTimeout(scrollTimeout);
+                }
+                scrollTimeout = setTimeout(handleScroll, 16); // ~60fps
+            });
+        });
+    </script>
+    <script>
+        // Tab Switching Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabButtons = document.querySelectorAll('.tab-button');
+            
+            tabButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Get the tab id from data attribute
+                    const tabId = this.getAttribute('data-tab');
+                    
+                    // Remove active class from all buttons and content
+                    document.querySelectorAll('.tab-button').forEach(btn => {
+                        btn.classList.remove('active');
+                    });
+                    document.querySelectorAll('.tab-content').forEach(content => {
+                        content.classList.remove('active');
+                    });
+                    
+                    // Add active class to clicked button and corresponding content
+                    this.classList.add('active');
+                    document.getElementById(tabId + '-content').classList.add('active');
+                });
+            });
+        });
+    </script>
+
+</body></html>
